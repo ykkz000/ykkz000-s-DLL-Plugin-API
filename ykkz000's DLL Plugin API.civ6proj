@@ -13,6 +13,9 @@
     <SupportsMultiplayer>true</SupportsMultiplayer>
     <SupportsHotSeat>true</SupportsHotSeat>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <DependencyData><![CDATA[<Dependencies>
+  <Mod id="9e4ee2f0-c9d2-4eb4-8b38-b698411da023" title="ykkz000's DLL Plugin Loader" />
+</Dependencies>]]></DependencyData>
     <LocalizedTextData><![CDATA[<LocalizedText><Text id="LOC_MOD_YKKZ000_DLL_PLUGIN_API_NAME"><en_US>ykkz000's [COLOR_FLOAT_GOLD]DLL Plugin API[ENDCOLOR]</en_US><zh_Hans_CN>ykkz000的[COLOR_FLOAT_GOLD]DLL 插件 API[ENDCOLOR]</zh_Hans_CN></Text><Text id="LOC_MOD_YKKZ000_DLL_PLUGIN_API_TEASER"><en_US>Shared EffectType and persistence services for ykkz000's DLL plugins</en_US><zh_Hans_CN>为 ykkz000 的 DLL 插件提供共享的 EffectType 与持久化服务</zh_Hans_CN></Text><Text id="LOC_MOD_YKKZ000_DLL_PLUGIN_API_DESCRIPTION"><en_US>Provides the shared EffectType and persistence C ABI services consumed by ykkz000 DLL plugins. The API plugins are themselves plugins; the loader initializes them before their consumers.[NEWLINE]Required by [COLOR_FLOAT_GOLD]ykkz000's Soviet Union (Rework)[ENDCOLOR].[NEWLINE]Supported Languages: English, 简体中文</en_US><zh_Hans_CN>为 ykkz000 的 DLL 插件提供共享的 EffectType 与持久化 C ABI 服务。API 插件本身也是插件；loader 会在其 consumer 之前初始化它们。[NEWLINE]为 [COLOR_FLOAT_GOLD]ykkz000的苏联（重做版）[ENDCOLOR] 的前置。[NEWLINE]支持的语言：English，简体中文</zh_Hans_CN></Text></LocalizedText>]]></LocalizedTextData>
     <AssemblyName>ykkz000's DLL Plugin API</AssemblyName>
     <RootNamespace>ykkz000's DLL Plugin API</RootNamespace>
