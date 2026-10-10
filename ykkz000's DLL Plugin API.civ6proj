@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>LOC_MOD_YKKZ000_DLL_PLUGIN_API_NAME</Name>
+    <Guid>02eb8617-3ce5-446f-b671-93943b8cbac2</Guid>
+    <ProjectGuid>0022738a-879d-46a3-a73b-a1b6a74cbbb7</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>LOC_MOD_YKKZ000_DLL_PLUGIN_API_TEASER</Teaser>
+    <Description>LOC_MOD_YKKZ000_DLL_PLUGIN_API_DESCRIPTION</Description>
+    <AffectsSavedGames>false</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <LocalizedTextData><![CDATA[<LocalizedText><Text id="LOC_MOD_YKKZ000_DLL_PLUGIN_API_NAME"><en_US>ykkz000's [COLOR_FLOAT_GOLD]DLL Plugin API[ENDCOLOR]</en_US><zh_Hans_CN>ykkz000的[COLOR_FLOAT_GOLD]DLL 插件 API[ENDCOLOR]</zh_Hans_CN></Text><Text id="LOC_MOD_YKKZ000_DLL_PLUGIN_API_TEASER"><en_US>Shared EffectType and persistence services for ykkz000's DLL plugins</en_US><zh_Hans_CN>为 ykkz000 的 DLL 插件提供共享的 EffectType 与持久化服务</zh_Hans_CN></Text><Text id="LOC_MOD_YKKZ000_DLL_PLUGIN_API_DESCRIPTION"><en_US>Provides the shared EffectType and persistence C ABI services consumed by ykkz000 DLL plugins. The API plugins are themselves plugins; the loader initializes them before their consumers.[NEWLINE]Required by [COLOR_FLOAT_GOLD]ykkz000's Soviet Union (Rework)[ENDCOLOR].[NEWLINE]Supported Languages: English, 简体中文</en_US><zh_Hans_CN>为 ykkz000 的 DLL 插件提供共享的 EffectType 与持久化 C ABI 服务。API 插件本身也是插件；loader 会在其 consumer 之前初始化它们。[NEWLINE]为 [COLOR_FLOAT_GOLD]ykkz000的苏联（重做版）[ENDCOLOR] 的前置。[NEWLINE]支持的语言：English，简体中文</zh_Hans_CN></Text></LocalizedText>]]></LocalizedTextData>
+    <AssemblyName>ykkz000's DLL Plugin API</AssemblyName>
+    <RootNamespace>ykkz000's DLL Plugin API</RootNamespace>
+    <Authors>ykkz000</Authors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="natives\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LICENSE">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="NOTICE">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
