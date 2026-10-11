@@ -1,0 +1,4 @@
+-- No-op in-game action for ykkz000's DLL Plugin API.
+-- Its only purpose is to make the API mod carry an in-game component so the
+-- engine treats it as an enabled in-game mod; the Loader then discovers the
+-- mod's plugin directory and initializes the API plugins before their consumers.
